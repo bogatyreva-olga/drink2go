@@ -1,0 +1,23 @@
+{
+  "name": "drink2go",
+  "version": "1.0.0",
+  "description": "coffee shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bogatyreva.o.v",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bogatyreva-olga/drink2go.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bogatyreva-olga/drink2go/issues"
+  },
+  "homepage": "https://github.com/bogatyreva-olga/drink2go#readme"
+}
