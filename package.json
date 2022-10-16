@@ -4,14 +4,18 @@
   "description": "coffee shop",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "list": "ls -la",
+    "images": "echo \"Optimaze images \"",
+    "less": "echo \"Build less\"",
+    "build": "npm run images && npm run less"
   },
   "author": "bogatyreva.o.v",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "less": "^4.1.3"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bogatyreva-olga/drink2go.git"
