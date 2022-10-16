@@ -8,12 +8,13 @@
     "list": "ls -la",
     "images": "echo \"Optimaze images \"",
     "less": "echo \"Build less\"",
-    "build": "npm run images && npm run less"
+    "build": "npm run images && npm run less",
+    "lint": "eslint source/js/"
   },
   "author": "bogatyreva.o.v",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^4.0.2",
+    "gulp": "^3.9.1",
     "less": "^4.1.3"
   },
   "repository": {
@@ -23,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/bogatyreva-olga/drink2go/issues"
   },
-  "homepage": "https://github.com/bogatyreva-olga/drink2go#readme"
+  "homepage": "https://github.com/bogatyreva-olga/drink2go#readme",
+  "devDependencies": {
+    "eslint": "^8.25.0"
+  }
 }
