@@ -4,12 +4,7 @@
   "description": "coffee shop",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "list": "ls -la",
-    "images": "echo \"Optimaze images \"",
-    "less": "echo \"Build less\"",
-    "build": "npm run images && npm run less",
-    "lint": "eslint source/js/"
+    "lint": "eslint --fix source/js/"
   },
   "author": "bogatyreva.o.v",
   "license": "ISC",
