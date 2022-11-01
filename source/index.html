@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Drink2Go</title>
+    <link rel="preload" href="fonts/montserrat-bold.ttf" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/montserrat-regular.ttf" as="font" crossorigin="anonymous"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body class="page">
 <header class="main-header">
-    <a class="main-header__logo">
-        <img class="main-header__logo-image">
-    </a>
     <div class="main-header__wrapper">
+        <a class="main-header__logo">
+            <svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M32 18C32 20.8737 31.4014 23.5901 30.3369 26H17C19.4627 22.2281 22 17.6606 22 13C22 7.00236 17.9385 1.95335 12.4158 0.453392C13.5681 0.156712 14.7678 0 16 0C24.8366 0 32 8.05888 32 18ZM18 13C18 8.02944 13.9706 4 9 4C2.34935 4 0 12.5071 0 18C0 27.9411 7.16344 36 16 36C20.7387 36 24.9962 33.6825 27.9259 30H9C9.35183 29.5514 9.72025 29.0891 10.0987 28.6142C13.6157 24.2012 18 18.6997 18 13Z" fill="#7859CF"/>
+            </svg>
+        </a>
         <nav class="main-nav">
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list reset-list">
@@ -23,12 +28,165 @@
                     <li class="user-list__item"><a class="user-list__link" href="#"></a></li>
                     <li class="user-list__item"><a class="user-list__link" href="#"></a></li>
                 </ul>
-                <button class="main-nav__toggle button-menu" type="button"><span class="visually-hidden">Открыть меню</span></button>
+                <button class="main-nav__toggle button-menu">
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
             </div>
+        </nav>
+        <nav class="main-nav-mobile">
+            <div class="main-nav-mobile__wrapper">
+                <a>
+                    <svg id="user" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.667 4a2.667 2.667 0 1 1-5.334 0 2.667 2.667 0 0 1 5.334 0ZM12 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-8.803 8.31C4.437 11.277 6.16 10.667 8 10.667s3.564.61 4.803 1.643c1.232 1.027 1.864 2.362 1.864 3.69H16c0-1.768-.843-3.464-2.343-4.714-1.5-1.25-3.535-1.953-5.657-1.953s-4.157.703-5.657 1.953S0 14.232 0 16h1.333c0-1.328.632-2.663 1.864-3.69Z" fill="#333"/>
+                    </svg>
+                    <span class="visually-hidden">Пользователь</span></a>
+                <a>
+                    <svg id="basket" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="m5.66 3.875.234 2.792h4.213l.232-2.792a2.347 2.347 0 1 0-4.678 0Zm5.784 2.792.224-2.68a3.68 3.68 0 1 0-7.336 0l.224 2.68H0L.19 8l.816 5.71A2.667 2.667 0 0 0 3.646 16h8.708a2.667 2.667 0 0 0 2.64-2.29L15.81 8 16 6.667h-4.556ZM11.334 8h-.054l-.222 2.667h3.024L14.462 8h-3.129ZM9.941 8H6.058l.222 2.667h3.44L9.942 8ZM4.72 8H1.537l.381 2.667h3.024L4.72 8Zm1.893 6.667L6.391 12H9.61l-.222 2.667H6.613ZM10.947 12l-.222 2.667h1.629c.663 0 1.226-.488 1.32-1.145L13.89 12h-2.944Zm-5.894 0 .222 2.667H3.646a1.333 1.333 0 0 1-1.32-1.145L2.11 12h2.944Z" fill="#333"/>
+                    </svg>
+                    <span class="visually-hidden">Корзина</span>
+                </a>
+            </div>
+            <button class="main-nav-mobile__button button-menu">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
         </nav>
     </div>
 </header>
 <section class="slider-page">
+    <div class="slider-content">
+        <div class="slider-content__wrapper">
+            <img src="images/mobile/flat-white.png" width="280" height="280" alt="flat-white"/>
+            <div class="slider-controls">
+                <button class="slider-controls-button slider-prev">
+                    <svg id="slider-prev" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.71661 0L11 1.32082L2.56677 10L11 18.6792L9.71661 20L0 10L9.71661 0Z" fill="#7859CF"/>
+                    </svg>
+                    <span class="visually-hidden">Предыдущее фото</span>
+                </button>
+                <button class="slider-controls-button slider-next">
+                    <svg id="slider-next" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.28339 0L0 1.32082L8.43323 10L0 18.6792L1.28339 20L11 10L1.28339 0Z" fill="#7859CF"/>
+                    </svg>
+                    <span class="visually-hidden">Следующее фото</span>
+                </button>
+            </div>
+            <div class="description">
+                <span class="description__new">Новинка</span>
+                <h2 class="description__title">Декаф Флэт Уайт</h2>
+                <span class="description__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</span>
+            </div>
+            <div class="prise">
+                <span></span>
+            </div>
+            <button>Заказать</button>
+        </div>
+    </div>
 </section>
+<section class="advantages">
+    <div class="advantages__wrapper">
+        <span class="advantages__span">Преимущества</span>
+        <h3 class="advantages__causes">Главные причины выбрать Drink2Go</h3>
+        <ul class="advantages__list">
+            <li class="advantages__item">
+                <svg></svg>
+                <span class="advantages__benefits">Скорость</span>
+                <span class="advantages__text">Готовый напиток всегда под рукой — просто открой банку</span>
+            </li>
+            <li class="advantages__item">
+                <svg></svg>
+                <span class="advantages__benefits">Удобство</span>
+                <span class="advantages__text">Легко помещается и в карман, и в маленькую сумочку</span>
+            </li>
+            <li class="advantages__item">
+                <svg></svg>
+                <span class="advantages__benefits">Бодрость</span>
+                <span class="advantages__text">Сбалансированная доза кофеина даст мощный заряд энергии</span>
+            </li>
+            <li class="advantages__item">
+                <svg></svg>
+                <span class="advantages__benefits">Экологичность</span>
+                <span class="advantages__text">Вся упаковка сделана из перерабатываемых материалов</span>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="catalog">
+    <span class="catalog__title">Каталог</span>
+    <h3 class="catalog__causes">Каталог кофейных напитков</h3>
+    <fieldset class="catalog__filter filter">
+        <legend>Цена</legend>
+        <legend>Наличие молока</legend>
+        <legend>Страна произрастания</legend>
+    </fieldset>
+    <button>Применить фильтр</button>
+    <button>Сбросить фильтр</button>
+    <span>Сортировка по умолчанию:</span>
+    <ul class="catalog__list">
+        <li class="catalog__item">
+            <img/>
+            <h4 class="catalog__description">Декаф Флэт Уайт</h4>
+            <span class="catalog__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
+            <span class="catalog__price">225₽</span>
+            <button class="catalog__basket"></button>
+        </li>
+        <li class="catalog__item">
+            <img/>
+            <h4 class="catalog__description">Декаф Флэт Уайт</h4>
+            <span class="catalog__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
+            <span class="catalog__price">225₽</span>
+            <button class="catalog__basket"></button>
+        </li>
+        <li class="catalog__item">
+            <img/>
+            <h4 class="catalog__description">Декаф Флэт Уайт</h4>
+            <span class="catalog__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
+            <span class="catalog__price">225₽</span>
+            <button class="catalog__basket"></button>
+        </li>
+        <li class="catalog__item">
+            <img/>
+            <h4 class="catalog__description">Декаф Флэт Уайт</h4>
+            <span class="catalog__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
+            <span class="catalog__price">225₽</span>
+            <button class="catalog__basket"></button>
+        </li>
+        <li class="catalog__item">
+            <img/>
+            <h4 class="catalog__description">Декаф Флэт Уайт</h4>
+            <span class="catalog__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
+            <span class="catalog__price">225₽</span>
+            <button class="catalog__basket"></button>
+        </li>
+        <li class="catalog__item">
+            <img/>
+            <h4 class="catalog__description">Декаф Флэт Уайт</h4>
+            <span class="catalog__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
+            <span class="catalog__price">225₽</span>
+            <button class="catalog__basket"></button>
+        </li>
+    </ul>
+    <div class="catalog__pagination paginator">
+        <ul class="paginator-__list">
+            <li class="paginator__page"><a><span>1</span></a>
+                <span class="visually-hidden">1 страница каталога</span>
+            </li>
+            <li class="paginator__page"><a><span>2</span></a>
+                <span class="visually-hidden">2 страница каталога</span>
+            </li>
+            <li class="paginator__page"><a><span>3</span></a>
+                <span class="visually-hidden">2 страница каталога</span>
+            </li>
+            <li class="paginator__page"><a><span>...</span></a>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="map">
+    <div class="map__canvas" id="map-canvas"></div>
+</section>
+<footer>
+
+</footer>
 </body>
 </html>
